@@ -1,0 +1,1041 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Johana Lugo Makeup · Maquillaje profesional en Guadalajara</title>
+  <meta name="description" content="Maquillaje profesional en Guadalajara para tus eventos especiales. En mi domicilio desde $600 o a domicilio en zona GDL. Agenda por WhatsApp.">
+  <meta name="theme-color" content="#FCFBFA">
+  <meta name="color-scheme" content="light">
+
+  <!-- Compartir (WhatsApp, Facebook, Instagram) -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_MX">
+  <meta property="og:title" content="Johana Lugo Makeup · Maquillaje profesional en Guadalajara">
+  <meta property="og:description" content="Un look pensado para ti. En mi domicilio desde $600 o a domicilio en zona GDL.">
+  <meta property="og:image" content="share.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%238C1D3E'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='Georgia,serif' font-size='40' fill='%23FCFBFA'%3EJ%3C/text%3E%3C/svg%3E">
+
+  <link rel="preload" href="fonts/bricolage-grotesque.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/hanken-grotesk.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preconnect" href="https://cdn.fouita.com" crossorigin>
+  <link rel="preconnect" href="https://imgin.fouita.com" crossorigin>
+
+  <style>
+    /* ----------------------------------------------------------------
+       Fuentes alojadas en el propio sitio (OFL). Sólo el subconjunto
+       latino: cubre acentos, ñ, ¿ y ¡.
+       ---------------------------------------------------------------- */
+    @font-face {
+      font-family: "Bricolage Grotesque";
+      src: url("fonts/bricolage-grotesque.woff2") format("woff2");
+      font-weight: 400 800; font-stretch: 75% 100%; font-display: swap;
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+    @font-face {
+      font-family: "Hanken Grotesk";
+      src: url("fonts/hanken-grotesk.woff2") format("woff2");
+      font-weight: 400 700; font-display: swap;
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+
+    /* ----------------------------------------------------------------
+       Sistema. Paleta del tocador: blanco limpio, tinta cacao, berry
+       como acento y campo, nude como segundo campo.
+       ---------------------------------------------------------------- */
+    :root {
+      --ground: #FCFBFA;
+      --ink: #261714;
+      --ink-2: #5E4843;        /* texto secundario: 8.2:1 sobre blanco */
+      --berry: #8C1D3E;
+      --berry-ink: #6E142F;    /* berry al presionar */
+      --nude: #EED5C6;
+      --line: #EADFDA;
+      --tone: #EBCDBB;         /* lo cambia la paleta del hero */
+
+      --display: "Bricolage Grotesque", "Hanken Grotesk", system-ui, sans-serif;
+      --text: "Hanken Grotesk", system-ui, -apple-system, "Segoe UI", sans-serif;
+
+      --r: 18px;
+      --r-sm: 12px;
+      --wrap: min(1180px, calc(100% - clamp(40px, 8vw, 96px)));
+
+      /* Curvas con fuerza (Emil Kowalski): nada de ease-in en UI */
+      --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+      --ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+    * { margin: 0; }
+    html { scroll-behavior: smooth; scroll-padding-top: 88px; -webkit-text-size-adjust: 100%; }
+    body {
+      background: var(--ground);
+      color: var(--ink);
+      font: 400 17px/1.6 var(--text);
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+      accent-color: var(--berry);
+      caret-color: var(--berry);
+      scrollbar-color: var(--berry) var(--ground);
+    }
+    img, svg { display: block; max-width: 100%; }
+    a { color: inherit; text-underline-offset: 0.2em; }
+    ::selection { background: var(--berry); color: var(--ground); }
+    :focus-visible { outline: 2px solid var(--berry); outline-offset: 3px; border-radius: 6px; }
+
+    h1, h2, h3 {
+      font-family: var(--display);
+      font-weight: 700;
+      line-height: 1.02;
+      letter-spacing: -0.035em;
+      text-wrap: balance;
+      font-variation-settings: "opsz" 96;
+    }
+    h2 { font-size: clamp(2.4rem, 5vw, 4rem); }
+    p { text-wrap: pretty; }
+
+    .wrap { width: var(--wrap); margin-inline: auto; }
+    .lead { font-size: clamp(1.06rem, 1.4vw, 1.2rem); color: var(--ink-2); max-width: 54ch; }
+
+    .skip {
+      position: absolute; left: 16px; top: -60px; z-index: 200;
+      background: var(--ink); color: var(--ground); padding: 12px 18px; border-radius: 10px;
+      font-weight: 600; text-decoration: none;
+    }
+    .skip:focus { top: 16px; }
+
+    .icon { width: 1.15em; height: 1.15em; fill: currentColor; flex: none; }
+
+    /* ---------------- Botones: un par, una forma ---------------- */
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center; gap: 0.55em;
+      min-height: 52px; padding: 0 26px; border-radius: 999px;
+      font: 600 1rem/1 var(--text); text-decoration: none; cursor: pointer;
+      border: 1.5px solid transparent;
+      transition: background-color 180ms ease, color 180ms ease, border-color 180ms ease, transform 160ms var(--ease-out);
+      -webkit-tap-highlight-color: transparent;
+    }
+    .btn:active { transform: scale(0.97); }
+    .btn-primary { background: var(--berry); color: var(--ground); }
+    .btn-primary:active { background: var(--berry-ink); }
+    .btn-ghost { border-color: color-mix(in srgb, var(--ink) 22%, transparent); color: var(--ink); }
+    @media (hover: hover) and (pointer: fine) {
+      .btn-primary:hover { background: var(--berry-ink); }
+      .btn-ghost:hover { border-color: var(--ink); }
+    }
+
+    /* ---------------- Encabezado ---------------- */
+    .top {
+      position: sticky; top: 0; z-index: 100;
+      background: color-mix(in srgb, var(--ground) 90%, transparent);
+      backdrop-filter: saturate(1.4) blur(14px);
+      -webkit-backdrop-filter: saturate(1.4) blur(14px);
+      border-bottom: 1px solid var(--line);
+    }
+    .top .wrap { min-height: 72px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+    .mark {
+      font: 700 1.3rem/1 var(--display); letter-spacing: -0.03em; text-decoration: none;
+      display: inline-flex; align-items: baseline; gap: 0.35em; min-height: 44px; align-items: center;
+    }
+    .mark span { color: var(--berry); font-weight: 500; }
+    .nav { display: flex; align-items: center; gap: clamp(16px, 3vw, 34px); }
+    .nav a:not(.btn) {
+      font-weight: 500; color: var(--ink-2); text-decoration: none; padding: 10px 0;
+      background: linear-gradient(currentColor, currentColor) 0 calc(100% - 6px) / 0 1.5px no-repeat;
+      transition: background-size 220ms var(--ease-out), color 180ms ease;
+    }
+    @media (hover: hover) and (pointer: fine) {
+      .nav a:not(.btn):hover { color: var(--ink); background-size: 100% 1.5px; }
+    }
+    .nav .btn { min-height: 44px; padding: 0 18px; font-size: 0.95rem; }
+
+    /* ---------------- Hero ---------------- */
+    .hero { padding: clamp(32px, 6vh, 72px) 0 clamp(32px, 5vh, 56px); }
+    #servicios { padding-top: clamp(48px, 7vh, 88px); }
+    .hero .wrap {
+      display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
+      gap: clamp(32px, 6vw, 88px); align-items: center;
+      min-height: min(720px, calc(100svh - 72px - 120px));
+    }
+    .hero h1 { font-size: clamp(3rem, 7.2vw, 6rem); margin-bottom: 26px; }
+    .hero h1 em { font-style: normal; color: var(--berry); white-space: nowrap; }
+    .hero .lead { margin-bottom: 30px; }
+    .fact {
+      display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 18px;
+      margin-bottom: 34px; color: var(--ink-2); font-weight: 500;
+    }
+    .fact strong { font: 700 clamp(1.7rem, 2.6vw, 2.1rem)/1 var(--display); color: var(--ink); letter-spacing: -0.03em; }
+    .actions { display: flex; flex-wrap: wrap; gap: 12px; }
+
+    /* El tocador: campo de color + fotos reales de Instagram + paleta */
+    .vanity {
+      position: relative; border-radius: calc(var(--r) + 10px);
+      background: var(--tone); padding: clamp(16px, 2.2vw, 24px);
+      transition: background-color 420ms var(--ease-in-out);
+    }
+    .shots {
+      display: grid; grid-template-columns: 1.25fr 1fr; grid-template-rows: 1fr 1fr;
+      gap: clamp(10px, 1.4vw, 14px); aspect-ratio: 5 / 4.6;
+    }
+    .shot {
+      position: relative; overflow: hidden; border-radius: var(--r);
+      background: color-mix(in srgb, var(--ink) 9%, var(--tone));
+      transition: background-color 420ms var(--ease-in-out);
+    }
+    .shot:first-child { grid-row: 1 / span 2; }
+    .shot img {
+      width: 100%; height: 100%; object-fit: cover; opacity: 0;
+      transition: opacity 360ms ease, transform 420ms var(--ease-out);
+    }
+    .shot img.is-in { opacity: 1; }
+    @media (hover: hover) and (pointer: fine) { .shot:hover img.is-in { transform: scale(1.03); } }
+    .shot a { position: absolute; inset: 0; border-radius: inherit; }
+
+    /* Si Instagram no carga, el tocador no se queda vacío */
+    .vanity-fallback {
+      display: none; aspect-ratio: 5 / 4.6; border-radius: var(--r);
+      background: color-mix(in srgb, var(--ink) 9%, var(--tone));
+      place-content: center; text-align: center; padding: 32px; gap: 16px;
+    }
+    .vanity-fallback p { font: 700 clamp(1.6rem, 3vw, 2.4rem)/1.05 var(--display); letter-spacing: -0.03em; }
+    .vanity.is-offline .shots { display: none; }
+    .vanity.is-offline .vanity-fallback { display: grid; justify-items: center; }
+
+    .palette { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-top: clamp(14px, 2vw, 20px); }
+    .palette-label { font-weight: 600; font-size: 0.95rem; }
+    .pans { display: flex; gap: 6px; }
+    .pan {
+      width: 44px; height: 44px; border-radius: 50%; border: 0; padding: 0; cursor: pointer;
+      background: var(--pan); position: relative;
+      box-shadow: inset 0 -6px 10px rgba(0, 0, 0, 0.16), inset 0 3px 6px rgba(255, 255, 255, 0.28);
+      transition: transform 160ms var(--ease-out);
+      -webkit-tap-highlight-color: transparent;
+    }
+    .pan::after {
+      content: ""; position: absolute; inset: -5px; border-radius: 50%;
+      border: 2px solid var(--ink); opacity: 0; transform: scale(0.9);
+      transition: opacity 180ms ease, transform 200ms var(--ease-out);
+    }
+    .pan[aria-pressed="true"]::after { opacity: 1; transform: none; }
+    .pan:active { transform: scale(0.94); }
+
+    /* ---------------- Servicios ---------------- */
+    .section { padding: clamp(80px, 12vh, 140px) 0; }
+    .head { display: grid; gap: 16px; margin-bottom: clamp(36px, 5vw, 56px); max-width: 760px; }
+    .services { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(14px, 2vw, 24px); }
+    .service {
+      display: grid; grid-template-rows: auto auto 1fr auto; gap: 14px;
+      padding: clamp(28px, 4vw, 44px); border-radius: var(--r);
+      border: 1px solid var(--line); background: #FFFFFF;
+    }
+    .service:nth-child(2) { background: var(--ink); color: var(--ground); border-color: var(--ink); }
+    .service h3 { font-size: clamp(1.6rem, 2.4vw, 2rem); }
+    .service .who { font-weight: 600; color: var(--berry); }
+    .service:nth-child(2) .who { color: #F3B9C9; }
+    .service p { color: var(--ink-2); max-width: 40ch; }
+    .service:nth-child(2) p { color: color-mix(in srgb, var(--ground) 76%, var(--ink)); }
+    .service p.price { color: inherit; } /* el precio va en el color pleno de la tarjeta */
+    .price {
+      font: 700 clamp(3.4rem, 6vw, 5rem)/0.9 var(--display); letter-spacing: -0.04em;
+      font-variant-numeric: tabular-nums; margin-top: 18px;
+    }
+    .price small { font: 500 1rem/1 var(--text); letter-spacing: 0; margin-left: 6px; opacity: 0.7; }
+    .service .btn { justify-self: start; margin-top: 10px; }
+    .service:nth-child(2) .btn-primary { background: var(--ground); color: var(--ink); }
+    @media (hover: hover) and (pointer: fine) {
+      .service:nth-child(2) .btn-primary:hover { background: var(--nude); }
+    }
+
+    /* ---------------- Proceso ---------------- */
+    .steps { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(24px, 4vw, 56px); list-style: none; padding: 0; counter-reset: s; }
+    .steps li { border-top: 1.5px solid var(--ink); padding-top: 22px; counter-increment: s; }
+    .steps li::before {
+      content: "0" counter(s); display: block; margin-bottom: 18px;
+      font: 700 0.95rem/1 var(--display); color: var(--berry); font-variant-numeric: tabular-nums;
+    }
+    .steps h3 { font-size: clamp(1.45rem, 2.2vw, 1.8rem); margin-bottom: 10px; }
+    .steps p { color: var(--ink-2); max-width: 34ch; }
+
+    /* ---------------- Portafolio ---------------- */
+    .work { background: var(--nude); }
+    .work .head { grid-template-columns: 1fr auto; align-items: end; max-width: none; column-gap: 40px; }
+    .work .head p { grid-column: 1; }
+    .socials { display: flex; flex-wrap: wrap; gap: 10px; }
+    .chip {
+      display: inline-flex; align-items: center; gap: 9px; min-height: 48px; padding: 0 18px;
+      border-radius: 999px; background: #FFFFFF; color: var(--ink); text-decoration: none; font-weight: 600;
+      transition: transform 160ms var(--ease-out), box-shadow 200ms ease;
+    }
+    .chip:active { transform: scale(0.97); }
+    @media (hover: hover) and (pointer: fine) {
+      .chip:hover { transform: translateY(-2px); box-shadow: 0 8px 20px -10px rgba(38, 23, 20, 0.35); }
+    }
+    .chip .icon { width: 20px; height: 20px; }
+    .i-ig { fill: #FF0069; } .i-tt { fill: #000000; } .i-fb { fill: #0866FF; }
+
+    /* El widget de Fouita sólo es la fuente: trae solo las publicaciones
+       nuevas. Lo cargamos fuera de la vista y pintamos nuestra propia
+       cuadrícula pareja con sus fotos y enlaces. */
+    .feed { position: relative; }
+    .feed-source {
+      position: absolute; left: 0; top: 0; width: 100%; height: 1px;
+      overflow: hidden; clip-path: inset(50%); pointer-events: none;
+    }
+    .grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: clamp(8px, 1.2vw, 14px); list-style: none; padding: 0; }
+    .grid:empty { display: none; }
+    .tile { display: block; position: relative; aspect-ratio: 4 / 5; overflow: hidden; border-radius: var(--r-sm); background: color-mix(in srgb, var(--ink) 8%, var(--nude)); }
+    .tile img { width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity 320ms ease, transform 420ms var(--ease-out); }
+    .tile img.is-in { opacity: 1; }
+    @media (hover: hover) and (pointer: fine) { .tile:hover img.is-in { transform: scale(1.03); } }
+    /* Mientras carga: el espacio ya reservado, sin saltos */
+    .feed-wait { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: clamp(8px, 1.2vw, 14px); }
+    .feed-wait span { aspect-ratio: 4 / 5; border-radius: var(--r-sm); background: color-mix(in srgb, var(--ink) 8%, var(--nude)); }
+    .feed.is-ready .feed-wait, .feed.is-offline .feed-wait { display: none; }
+    .feed-fallback { display: none; padding: 48px 0; font-size: 1.1rem; color: var(--ink-2); }
+    .feed.is-offline .feed-fallback { display: block; }
+
+    /* ---------------- Probador de paletas ---------------- */
+    .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+    .try { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr); gap: clamp(32px, 6vw, 88px); align-items: center; }
+    .try-section { padding-block: clamp(64px, 9vh, 104px); }
+    .try-private { font-size: 1.05rem; color: var(--ink-2); margin-bottom: 28px; max-width: 40ch; }
+
+    /* Cabecera siempre visible + botón que abre/cierra el probador */
+    .try-head { display: flex; align-items: flex-end; justify-content: space-between; flex-wrap: wrap; gap: 28px 48px; }
+    .try-head .lead { margin-top: 18px; }
+    .try-toggle {
+      display: inline-flex; align-items: center; gap: 16px; min-height: 60px; padding: 0 22px 0 16px; border-radius: 999px;
+      border: 1.5px solid color-mix(in srgb, var(--ink) 22%, transparent); background: transparent; color: var(--ink);
+      font: 600 1rem/1 var(--text); cursor: pointer; -webkit-tap-highlight-color: transparent;
+      transition: border-color 180ms ease, background-color 220ms ease, transform 160ms var(--ease-out);
+    }
+    .try-toggle:active { transform: scale(0.97); }
+    .try-toggle[aria-expanded="true"] { background: var(--nude); border-color: transparent; }
+    @media (hover: hover) and (pointer: fine) { .try-toggle:hover { border-color: var(--ink); } }
+    /* Cinco godetes encimados que se abren en abanico */
+    .try-fan { position: relative; width: 72px; height: 28px; flex: none; margin-inline: 10px 6px; }
+    .try-fan i {
+      position: absolute; top: 0; left: calc(var(--n) * 11px); width: 28px; height: 28px; border-radius: 50%;
+      background: var(--c); box-shadow: 0 0 0 2px var(--ground), inset 0 -3px 5px rgba(0,0,0,.18);
+      transform-origin: 50% 140%; transition: transform 460ms var(--ease-out), box-shadow 220ms ease;
+      transition-delay: calc(var(--n) * 28ms);
+    }
+    .try-toggle[aria-expanded="true"] .try-fan i { box-shadow: 0 0 0 2px var(--nude), inset 0 -3px 5px rgba(0,0,0,.18); transform: rotate(calc((var(--n) - 2) * 15deg)) translateY(-3px); }
+    @media (hover: hover) and (pointer: fine) {
+      .try-toggle:hover .try-fan i { transform: rotate(calc((var(--n) - 2) * 8deg)) translateY(-2px); }
+      .try-toggle[aria-expanded="true"]:hover .try-fan i { transform: rotate(calc((var(--n) - 2) * 15deg)) translateY(-3px); }
+    }
+    .try-toggle-label { min-width: 9.6em; text-align: left; }
+    .try-chev { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; transition: transform 460ms var(--ease-out); }
+    .try-toggle[aria-expanded="true"] .try-chev { transform: rotate(180deg); }
+
+    /* El panel se despliega (alto real con grid 0fr → 1fr); cerrar es más rápido que abrir */
+    .try-panel { display: grid; grid-template-rows: 0fr; transition: grid-template-rows 380ms var(--ease-in-out); }
+    .try-panel-in { min-height: 0; overflow: hidden; padding-inline: 8px; margin-inline: -8px; }
+    .try-panel .try { align-items: start; padding: clamp(36px, 5vw, 60px) 0 8px; opacity: 0; transform: translateY(-16px); transition: opacity 160ms ease, transform 380ms var(--ease-out); }
+    .try-panel .try-stage { transform: rotate(-2.5deg) scale(0.94); transform-origin: 70% 0; transition: transform 380ms var(--ease-out); }
+    .try-section.is-open .try-panel { grid-template-rows: 1fr; transition-duration: 700ms; }
+    .try-section.is-open .try { opacity: 1; transform: none; transition: opacity 380ms ease 120ms, transform 700ms var(--ease-out) 60ms; }
+    /* El tocador "aterriza" con un ligero giro coqueto */
+    .try-section.is-open .try-stage { transform: none; transition: transform 900ms cubic-bezier(0.34, 1.4, 0.64, 1) 140ms; }
+    @media (max-width: 640px) {
+      .try-toggle { width: 100%; }
+      .try-toggle-label { flex: 1; }
+    }
+    /* El input real es invisible; el anillo de foco se muestra en su botón */
+    .actions:has(#try-file:focus-visible) label { outline: 2px solid var(--berry); outline-offset: 3px; }
+    .try-status { min-height: 1.6em; margin-top: 16px; font-weight: 600; color: var(--berry); }
+    .try-stage { border-radius: calc(var(--r) + 10px); background: var(--nude); padding: clamp(14px, 2vw, 20px); display: grid; gap: 14px; }
+    /* Una selfie vertical no debe empujar los controles fuera de la pantalla */
+    .try-stage canvas {
+      width: 100%; height: auto; max-height: min(68vh, 640px); object-fit: contain;
+      border-radius: var(--r); display: none; background: color-mix(in srgb, var(--ink) 8%, var(--nude));
+    }
+    .try-empty {
+      aspect-ratio: 4 / 5; border-radius: var(--r); display: grid; place-content: center; text-align: center; gap: 8px; padding: 24px;
+      background: color-mix(in srgb, var(--ink) 7%, var(--nude)); border: 1.5px dashed color-mix(in srgb, var(--ink) 25%, transparent);
+    }
+    .try-empty p { font: 700 clamp(1.4rem, 2.6vw, 1.9rem)/1.1 var(--display); letter-spacing: -0.03em; }
+    .try-empty span { color: var(--ink-2); }
+    .try-stage[data-state="ready"] canvas { display: block; }
+    .try-stage[data-state="ready"] .try-empty, .try-stage[data-state="busy"] .try-empty { display: none; }
+    .try-stage[data-state="busy"] canvas { display: block; opacity: 0.55; }
+    .try-bar, .try-palettes, .try-book { display: none; }
+    .try-stage[data-state="ready"] .try-bar { display: flex; }
+    .try-stage[data-state="ready"] .try-palettes { display: flex; }
+    .try-stage[data-state="ready"] .try-book { display: inline-flex; justify-self: start; }
+    .try-bar { align-items: center; justify-content: space-between; gap: 12px; }
+    .try-now { display: flex; align-items: center; gap: 12px; }
+    .try-name { font: 700 1.35rem/1 var(--display); letter-spacing: -0.03em; min-width: 7ch; }
+    .try-swatches { display: flex; gap: 4px; }
+    .try-swatches i { width: 18px; height: 18px; border-radius: 50%; background: var(--c); box-shadow: inset 0 -3px 5px rgba(0,0,0,.18); }
+    .try-ctrls { display: flex; gap: 6px; }
+    .try-btn {
+      width: 44px; height: 44px; border-radius: 50%; border: 0; background: #FFFFFF; color: var(--ink);
+      font: 700 1rem/1 var(--text); cursor: pointer; transition: transform 160ms var(--ease-out);
+    }
+    .try-btn:active { transform: scale(0.94); }
+    .try-palettes { flex-wrap: wrap; gap: 6px; }
+    .try-palettes button {
+      width: 44px; height: 44px; border-radius: 50%; border: 0; padding: 0; cursor: pointer; position: relative;
+      background: conic-gradient(var(--l) 0 33%, var(--s) 0 66%, var(--b) 0);
+      transition: transform 160ms var(--ease-out);
+    }
+    .try-palettes button:active { transform: scale(0.94); }
+    .try-palettes button::after {
+      content: ""; position: absolute; inset: -4px; border-radius: 50%; border: 2px solid var(--ink);
+      opacity: 0; transition: opacity 180ms ease;
+    }
+    .try-palettes button[aria-pressed="true"]::after { opacity: 1; }
+
+    /* ---------------- Cierre ---------------- */
+    .close { background: var(--berry); color: var(--ground); text-align: center; }
+    .me { display: flex; flex-direction: column; align-items: center; gap: 14px; margin: 0 auto 30px; }
+    .me img {
+      width: 120px; height: 120px; border-radius: 50%; object-fit: cover;
+      border: 3px solid var(--ground);
+      box-shadow: 0 12px 30px -12px rgba(38, 23, 20, 0.55);
+    }
+    .me figcaption { font: 600 1.05rem/1.3 var(--text); }
+    .close h2 { font-size: clamp(2.8rem, 7vw, 6rem); max-width: 14ch; margin: 0 auto 22px; }
+    .close .lead { color: color-mix(in srgb, var(--ground) 82%, var(--berry)); margin: 0 auto 36px; }
+    .close .btn-primary { background: var(--ground); color: var(--berry); }
+    @media (hover: hover) and (pointer: fine) { .close .btn-primary:hover { background: var(--nude); } }
+    .where { display: flex; align-items: center; justify-content: center; gap: 10px; margin-top: 30px; font-weight: 500; }
+
+    /* ---------------- Pie ---------------- */
+    footer { background: var(--ink); color: color-mix(in srgb, var(--ground) 80%, var(--ink)); padding: 52px 0 40px; }
+    footer .wrap { display: grid; grid-template-columns: 1fr auto; gap: 28px; align-items: center; }
+    footer .mark { color: var(--ground); }
+    footer .mark span { color: #F3B9C9; }
+    footer .socials .chip { background: color-mix(in srgb, var(--ground) 10%, var(--ink)); color: var(--ground); }
+    footer .i-tt { fill: var(--ground); }
+    footer small { grid-column: 1 / -1; font-size: 0.85rem; opacity: 0.75; }
+
+    /* ---------------- Barra de acción en celular ---------------- */
+    .dock { display: none; }
+
+    /* ================================================================
+       MOVIMIENTO — pocos momentos, bien hechos (sólo transform,
+       opacity y clip-path, que corren fluidos hasta en celular).
+       ================================================================ */
+    @keyframes rise { from { opacity: 0; transform: translateY(10px); } }
+    @keyframes settle { from { opacity: 0; transform: scale(0.97); } }
+    @keyframes word { from { transform: translateY(108%); } }
+    @keyframes curtain { from { clip-path: inset(100% 0 0 0 round var(--r)); } to { clip-path: inset(0 0 0 0 round var(--r)); } }
+    @keyframes pop { from { opacity: 0; transform: scale(0.9); } }
+    @keyframes stroke { to { clip-path: inset(0 0 0 0); } }
+    @keyframes tile { from { clip-path: inset(0 0 100% 0); transform: scale(1.06); } to { clip-path: inset(0 0 0 0); } }
+
+    /* 1 · Entrada del hero, una sola vez al cargar */
+    [data-enter] > * { animation: rise 600ms var(--ease-out) both; }
+    [data-enter] > .vanity { animation: settle 800ms var(--ease-out) 120ms both; }
+    /* El título sube palabra por palabra desde una máscara */
+    .rise .w { display: inline-block; overflow: clip; vertical-align: top; padding: 0 0.04em 0.16em; margin: 0 -0.04em -0.16em; }
+    .rise .w > span { display: inline-block; animation: word 900ms var(--ease-out) both; animation-delay: calc(80ms + var(--i) * 75ms); }
+    [data-enter] > :first-child { animation-name: none; } /* el título ya entra solo; el resto del bloque, abajo */
+    .hero .lead, .hero .fact, .hero .actions { animation: rise 600ms var(--ease-out) both; }
+    .hero .lead { animation-delay: 420ms; } .hero .fact { animation-delay: 500ms; } .hero .actions { animation-delay: 580ms; }
+    /* Un brochazo de labial bajo "Guadalajara" */
+    .hero h1 em { position: relative; display: inline-block; }
+    .swipe {
+      position: absolute; left: 34%; right: -2%; bottom: -0.04em; width: 68%; height: 0.3em; z-index: -1; overflow: visible;
+    }
+    .swipe path {
+      fill: none; stroke: #F3B9C9; stroke-width: 10; stroke-linecap: round; vector-effect: non-scaling-stroke;
+    }
+    .swipe { clip-path: inset(0 100% 0 0); animation: stroke 900ms var(--ease-out) 900ms forwards; }
+    .hero h1 { position: relative; z-index: 0; }
+    /* Las fotos del tocador se abren como cortina, en cascada */
+    .shot { animation: curtain 900ms var(--ease-in-out) both; animation-delay: calc(260ms + var(--k, 0) * 110ms); }
+    .shot:nth-child(2) { --k: 1; } .shot:nth-child(3) { --k: 2; }
+    .pan { animation: pop 420ms var(--ease-out) both; animation-delay: calc(700ms + var(--k, 0) * 45ms); }
+    .pan:nth-child(2) { --k: 1; } .pan:nth-child(3) { --k: 2; } .pan:nth-child(4) { --k: 3; } .pan:nth-child(5) { --k: 4; }
+
+    /* 2 · Cada foto de la galería se revela al cargar (no con el scroll) */
+    .tile img.is-in { animation: tile 760ms var(--ease-out) both; animation-delay: calc(var(--i, 0) * 45ms); }
+
+    /* 3 · El momento estrella: el cierre se enciende palabra por palabra
+       conforme bajas. Sólo donde el navegador lo soporta; si no, se ve completo. */
+    @supports (animation-timeline: view()) {
+      .lit span { animation: lit linear both; animation-timeline: view(); animation-range: cover calc(14% + var(--i) * 5%) cover calc(24% + var(--i) * 5%); }
+      .close .me { animation: settle linear both; animation-timeline: view(); animation-range: entry 10% cover 30%; }
+      @keyframes lit { from { opacity: 0.16; } to { opacity: 1; } }
+    }
+
+    /* 4 · Detalles al pasar el cursor */
+    .btn .icon { transition: transform 260ms var(--ease-out); }
+    @media (hover: hover) and (pointer: fine) {
+      .btn:hover .icon { transform: rotate(-12deg) scale(1.08); }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { animation-duration: 1ms !important; animation-delay: 0ms !important; transition-duration: 1ms !important; }
+      .lit span, .close .me { animation: none !important; opacity: 1 !important; transform: none !important; }
+      .swipe { clip-path: none; }
+    }
+
+    /* ---------------- Responsivo ---------------- */
+    @media (max-width: 980px) {
+      .hero .wrap { grid-template-columns: 1fr; min-height: 0; }
+      .vanity { max-width: 620px; }
+      .steps { grid-template-columns: 1fr; gap: 28px; }
+      .work .head { grid-template-columns: 1fr; }
+      .grid, .feed-wait { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+      .try { grid-template-columns: 1fr; }
+      .try-stage { max-width: 620px; }
+    }
+    @media (max-width: 720px) {
+      body { font-size: 16px; padding-bottom: calc(76px + env(safe-area-inset-bottom)); }
+      .nav a:not(.btn), .nav .btn { display: none; }
+      .services { grid-template-columns: 1fr; }
+      .grid, .feed-wait { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .actions .btn, .service .btn, .close .btn { width: 100%; }
+      .palette { flex-direction: column; align-items: flex-start; }
+      footer .wrap { grid-template-columns: 1fr; }
+      /* Aparece sólo cuando el botón del hero ya salió de la pantalla.
+         Al ocultarse también sale del orden de tabulación (visibility). */
+      .dock {
+        display: block; position: fixed; inset: auto 0 0 0; z-index: 120;
+        padding: 12px 16px calc(12px + env(safe-area-inset-bottom));
+        background: color-mix(in srgb, var(--ground) 92%, transparent);
+        backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
+        border-top: 1px solid var(--line);
+        transform: translateY(105%); visibility: hidden;
+        transition: transform 240ms var(--ease-out), visibility 0s linear 240ms;
+      }
+      .dock.is-shown { transform: none; visibility: visible; transition: transform 240ms var(--ease-out), visibility 0s; }
+      .dock .btn { width: 100%; }
+    }
+  </style>
+</head>
+
+<body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <!-- Íconos de Simple Icons (CC0) -->
+    <symbol id="i-wa" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></symbol>
+    <symbol id="i-ig" viewBox="0 0 24 24"><path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/></symbol>
+    <symbol id="i-tt" viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></symbol>
+    <symbol id="i-fb" viewBox="0 0 24 24"><path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/></symbol>
+  </svg>
+
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+
+  <header class="top">
+    <div class="wrap">
+      <a href="#" class="mark" aria-label="Johana Lugo Makeup, inicio">Johana Lugo <span>Makeup</span></a>
+      <nav class="nav" aria-label="Principal">
+        <a href="#servicios">Servicios</a>
+        <a href="#portafolio">Portafolio</a>
+        <a href="#probador">Pruébate</a>
+        <a href="#contacto">Contacto</a>
+        <a class="btn btn-primary" href="https://wa.me/522227693916?text=Hola%20Johana%2C%20me%20gustar%C3%ADa%20informaci%C3%B3n%20para%20agendar%20una%20cita." target="_blank" rel="noopener noreferrer">
+          <svg class="icon" aria-hidden="true"><use href="#i-wa"/></svg>Agendar cita
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="h-hero">
+      <div class="wrap" data-enter>
+        <div style="--i:0">
+          <h1 id="h-hero" class="rise"><span class="w"><span style="--i:0">Maquillaje</span></span> <span class="w"><span style="--i:1">profesional</span></span> <em><span class="w"><span style="--i:2">en</span></span> <span class="w"><span style="--i:3">Guadalajara</span></span><svg class="swipe" viewBox="0 0 200 20" preserveAspectRatio="none" aria-hidden="true"><path d="M3 13 C 55 5, 130 3, 197 9"/></svg></em></h1>
+          <p class="lead">Un look pensado para tus facciones, tus gustos y tu personalidad. Para ese evento que merece recordarse, en mi domicilio o donde tú estés.</p>
+          <p class="fact"><strong>Desde $600</strong> A domicilio en toda la zona GDL</p>
+          <div class="actions">
+            <a class="btn btn-primary" href="https://wa.me/522227693916?text=Hola%20Johana%2C%20me%20gustar%C3%ADa%20informaci%C3%B3n%20para%20agendar%20una%20cita." target="_blank" rel="noopener noreferrer">
+              <svg class="icon" aria-hidden="true"><use href="#i-wa"/></svg>Agendar por WhatsApp
+            </a>
+            <a class="btn btn-ghost" href="#portafolio">Ver mi trabajo</a>
+          </div>
+        </div>
+
+        <div class="vanity" id="vanity">
+          <!-- Se llenan solas con las publicaciones más recientes de Instagram -->
+          <div class="shots">
+            <div class="shot"><img alt="" decoding="async"><a href="https://www.instagram.com/johanalugo.makeup/" target="_blank" rel="noopener noreferrer" aria-label="Ver esta publicación en Instagram"></a></div>
+            <div class="shot"><img alt="" decoding="async"><a href="https://www.instagram.com/johanalugo.makeup/" target="_blank" rel="noopener noreferrer" aria-label="Ver esta publicación en Instagram"></a></div>
+            <div class="shot"><img alt="" decoding="async"><a href="https://www.instagram.com/johanalugo.makeup/" target="_blank" rel="noopener noreferrer" aria-label="Ver esta publicación en Instagram"></a></div>
+          </div>
+          <div class="vanity-fallback">
+            <p>Mira mis looks más recientes</p>
+            <a class="btn btn-primary" href="https://www.instagram.com/johanalugo.makeup/" target="_blank" rel="noopener noreferrer">Ver mi Instagram</a>
+          </div>
+          <div class="palette">
+            <span class="palette-label" id="palette-label">Prueba un tono</span>
+            <div class="pans" role="group" aria-labelledby="palette-label">
+              <button class="pan" type="button" style="--pan:#D9A88C" data-tone="#EBCDBB" aria-pressed="true" aria-label="Nude"></button>
+              <button class="pan" type="button" style="--pan:#D77E7E" data-tone="#F0C3BF" aria-pressed="false" aria-label="Rubor"></button>
+              <button class="pan" type="button" style="--pan:#8C1D3E" data-tone="#E6B6C3" aria-pressed="false" aria-label="Berry"></button>
+              <button class="pan" type="button" style="--pan:#B3743F" data-tone="#E5C3A1" aria-pressed="false" aria-label="Bronce"></button>
+              <button class="pan" type="button" style="--pan:#5A362C" data-tone="#D3B8AD" aria-pressed="false" aria-label="Cacao"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section class="section" id="servicios" aria-labelledby="h-servicios">
+      <div class="wrap">
+        <div class="head">
+          <h2 id="h-servicios">Elige dónde te maquillo</h2>
+          <p class="lead">Mismo cuidado en los dos: un servicio personalizado, con atención a cada detalle para que disfrutes y te sientas increíble.</p>
+        </div>
+        <div class="services">
+          <article class="service">
+            <span class="who">Tú vienes a mí</span>
+            <h3>En mi domicilio</h3>
+            <p>Maquillaje profesional en un espacio preparado para ti.</p>
+            <div>
+              <p class="price">$600 <small>MXN</small></p>
+              <a class="btn btn-primary" href="https://wa.me/522227693916?text=Hola%20Johana%2C%20me%20interesa%20agendar%20maquillaje%20profesional%20en%20tu%20domicilio." target="_blank" rel="noopener noreferrer">
+                <svg class="icon" aria-hidden="true"><use href="#i-wa"/></svg>Agendar este servicio
+              </a>
+            </div>
+          </article>
+          <article class="service">
+            <span class="who">Yo voy a ti</span>
+            <h3>A domicilio</h3>
+            <p>Tú disfruta el momento, yo voy hasta donde estés, en la zona de Guadalajara.</p>
+            <div>
+              <p class="price">$1,000 <small>MXN</small></p>
+              <a class="btn btn-primary" href="https://wa.me/522227693916?text=Hola%20Johana%2C%20me%20interesa%20agendar%20maquillaje%20profesional%20a%20domicilio." target="_blank" rel="noopener noreferrer">
+                <svg class="icon" aria-hidden="true"><use href="#i-wa"/></svg>Agendar este servicio
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESO -->
+    <section class="section" aria-labelledby="h-proceso" style="padding-top:0">
+      <div class="wrap">
+        <div class="head">
+          <h2 id="h-proceso">Así preparamos tu look</h2>
+        </div>
+        <ol class="steps">
+          <li>
+            <h3>Me escribes</h3>
+            <p>Por WhatsApp me cuentas la fecha, el evento y lo que tienes en mente.</p>
+          </li>
+          <li>
+            <h3>Lo diseñamos juntas</h3>
+            <p>Cada rostro es único: el look se piensa para tus facciones, tus gustos y tu personalidad.</p>
+          </li>
+          <li>
+            <h3>Llega tu momento</h3>
+            <p>Cuidado en cada detalle para lograr el resultado que buscas, y que tú sólo disfrutes.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- PORTAFOLIO -->
+    <section class="section work" id="portafolio" aria-labelledby="h-portafolio">
+      <div class="wrap">
+        <div class="head">
+          <h2 id="h-portafolio">Mi trabajo más reciente</h2>
+          <div class="socials" aria-label="Redes sociales">
+            <a class="chip" href="https://www.instagram.com/johanalugo.makeup/" target="_blank" rel="noopener noreferrer"><svg class="icon i-ig" aria-hidden="true"><use href="#i-ig"/></svg>Instagram</a>
+            <a class="chip" href="https://www.tiktok.com/@johanalugo.makeup" target="_blank" rel="noopener noreferrer"><svg class="icon i-tt" aria-hidden="true"><use href="#i-tt"/></svg>TikTok</a>
+            <a class="chip" href="https://www.facebook.com/people/Johana-Lugo/61593519755397/" target="_blank" rel="noopener noreferrer"><svg class="icon i-fb" aria-hidden="true"><use href="#i-fb"/></svg>Facebook</a>
+          </div>
+          <p class="lead">Esta galería se actualiza sola con lo último que publico en Instagram.</p>
+        </div>
+
+        <div class="feed" id="feed">
+          <ul class="grid" id="grid" aria-label="Publicaciones recientes de Instagram"></ul>
+          <!-- Mientras carga: el espacio ya reservado, sin saltos -->
+          <div class="feed-wait" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+          <!-- Fuente automática de Instagram (Fouita). No tocar el id. -->
+          <div class="feed-source" aria-hidden="true">
+            <div id="ftju0f0ch" key="Masonry Instagram Feed" class="ft">
+              <script src="https://wdg.fouita.com/widgets/0x57c909.js"></script>
+            </div>
+          </div>
+          <p class="feed-fallback">La galería no cargó esta vez. Puedes ver todos mis looks en <a href="https://www.instagram.com/johanalugo.makeup/" target="_blank" rel="noopener noreferrer">mi Instagram</a>.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROBADOR -->
+    <section class="section try-section" id="probador" aria-labelledby="h-probador">
+      <div class="wrap">
+        <div class="try-head">
+          <div>
+            <h2 id="h-probador">Pruébate una paleta antes de tu cita</h2>
+            <p class="lead">Sube una selfie de frente y mira cómo se te ven labios, sombras y rubor en distintas paletas.</p>
+          </div>
+          <button class="try-toggle" type="button" id="try-toggle" aria-expanded="false" aria-controls="try-panel">
+            <span class="try-fan" aria-hidden="true"><i style="--n:0;--c:#D9A88C"></i><i style="--n:1;--c:#D77E7E"></i><i style="--n:2;--c:#8C1D3E"></i><i style="--n:3;--c:#B3743F"></i><i style="--n:4;--c:#5A362C"></i></span>
+            <span class="try-toggle-label" id="try-toggle-label">Abrir el probador</span>
+            <svg class="try-chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+        </div>
+
+        <div class="try-panel" id="try-panel" inert>
+        <div class="try-panel-in">
+        <div class="try">
+        <div class="try-copy">
+          <p class="try-private">Tu foto no sale de tu teléfono: se procesa aquí mismo y se borra al cerrar la página.</p>
+          <div class="actions">
+            <label class="btn btn-primary" for="try-file">Subir una selfie</label>
+            <input id="try-file" class="sr-only" type="file" accept="image/*">
+          </div>
+          <p class="try-status" id="try-status" role="status" aria-live="polite"></p>
+        </div>
+
+        <div class="try-stage" id="try-stage" data-state="empty">
+          <div class="try-empty">
+            <p>Tu foto aparece aquí</p>
+            <span>Luz de frente y la cara completa funcionan mejor.</span>
+          </div>
+          <canvas id="try-canvas" aria-label="Tu foto con la paleta aplicada" role="img"></canvas>
+
+          <div class="try-bar">
+            <div class="try-now">
+              <span class="try-name" id="try-name">Nude</span>
+              <span class="try-swatches" id="try-swatches" aria-hidden="true"><i></i><i></i><i></i></span>
+            </div>
+            <div class="try-ctrls">
+              <button class="try-btn" type="button" id="try-prev" aria-label="Paleta anterior">‹</button>
+              <button class="try-btn" type="button" id="try-play" aria-label="Pausar">❚❚</button>
+              <button class="try-btn" type="button" id="try-next" aria-label="Paleta siguiente">›</button>
+            </div>
+          </div>
+          <div class="try-palettes" id="try-palettes" role="group" aria-label="Paletas"></div>
+          <a class="btn btn-primary try-book" id="try-book" target="_blank" rel="noopener noreferrer" href="https://wa.me/522227693916">
+            <svg class="icon" aria-hidden="true"><use href="#i-wa"/></svg>Quiero esta paleta
+          </a>
+        </div>
+        </div>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CIERRE -->
+    <section class="section close" id="contacto" aria-labelledby="h-contacto">
+      <div class="wrap">
+        <figure class="me">
+          <img src="fotos/johana-retrato.jpg" alt="Johana Lugo, maquillista, sonriendo" width="120" height="120" loading="lazy" decoding="async">
+          <figcaption>Soy Johana, y yo te maquillo.</figcaption>
+        </figure>
+        <h2 id="h-contacto" class="lit"><span style="--i:0">Tu</span> <span style="--i:1">próximo</span> <span style="--i:2">look</span> <span style="--i:3">empieza</span> <span style="--i:4">con</span> <span style="--i:5">un</span> <span style="--i:6">mensaje</span></h2>
+        <p class="lead">Cuéntame la fecha, el evento y lo que imaginas. Será un gusto ayudarte a encontrar el look perfecto para ti.</p>
+        <a class="btn btn-primary" href="https://wa.me/522227693916?text=Hola%20Johana%2C%20me%20gustar%C3%ADa%20informaci%C3%B3n%20para%20agendar%20una%20cita." target="_blank" rel="noopener noreferrer">
+          <svg class="icon" aria-hidden="true"><use href="#i-wa"/></svg>Escribir por WhatsApp
+        </a>
+        <p class="where"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg>Guadalajara, Jalisco · Servicio a domicilio en zona GDL</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div>
+        <a href="#" class="mark">Johana Lugo <span>Makeup</span></a>
+        <p style="margin-top:8px">Resalta tu belleza, celebra tu esencia.</p>
+      </div>
+      <div class="socials" aria-label="Redes sociales">
+        <a class="chip" href="https://www.instagram.com/johanalugo.makeup/" target="_blank" rel="noopener noreferrer"><svg class="icon i-ig" aria-hidden="true"><use href="#i-ig"/></svg>Instagram</a>
+        <a class="chip" href="https://www.tiktok.com/@johanalugo.makeup" target="_blank" rel="noopener noreferrer"><svg class="icon i-tt" aria-hidden="true"><use href="#i-tt"/></svg>TikTok</a>
+        <a class="chip" href="https://www.facebook.com/people/Johana-Lugo/61593519755397/" target="_blank" rel="noopener noreferrer"><svg class="icon i-fb" aria-hidden="true"><use href="#i-fb"/></svg>Facebook</a>
+      </div>
+      <small>© <span id="year">2026</span> Johana Lugo Makeup.</small>
+    </div>
+  </footer>
+
+  <!-- Botón fijo en celular: la acción principal siempre a la mano -->
+  <div class="dock">
+    <a class="btn btn-primary" href="https://wa.me/522227693916?text=Hola%20Johana%2C%20me%20gustar%C3%ADa%20informaci%C3%B3n%20para%20agendar%20una%20cita." target="_blank" rel="noopener noreferrer">
+      <svg class="icon" aria-hidden="true"><use href="#i-wa"/></svg>Agendar por WhatsApp
+    </a>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear()
+
+    /* Paleta del tocador: cada tono cambia el campo de color del hero */
+    const vanity = document.getElementById('vanity')
+    document.querySelectorAll('.pan').forEach((pan) => {
+      pan.addEventListener('click', () => {
+        document.querySelectorAll('.pan').forEach((p) => p.setAttribute('aria-pressed', String(p === pan)))
+        vanity.style.setProperty('--tone', pan.dataset.tone)
+      })
+    })
+
+    /* Barra de WhatsApp en celular: sólo cuando el botón del hero ya no se ve */
+    const dock = document.querySelector('.dock')
+    new IntersectionObserver(([e]) => dock.classList.toggle('is-shown', !e.isIntersecting && e.boundingClientRect.top < 0))
+      .observe(document.querySelector('.hero .actions'))
+
+    /* Instagram sin plugins ni claves: el widget de Fouita trae solo las
+       publicaciones nuevas (fuera de la vista). De ahí tomamos cada foto y
+       su enlace para pintar nuestra cuadrícula y llenar el hero.
+       Si en 10 s no llegó nada, mostramos un enlace a Instagram. */
+    const host = document.getElementById('ftju0f0ch')
+    const feed = document.getElementById('feed')
+    const grid = document.getElementById('grid')
+    const heroImgs = [...document.querySelectorAll('.shot img')]
+    const heroLinks = [...document.querySelectorAll('.shot a')]
+    const PROFILE = 'https://www.instagram.com/johanalugo.makeup/'
+    let shown = ''
+
+    function readPosts() {
+      const seen = new Set()
+      return [...host.querySelectorAll('.ft-card img')]
+        .map((img) => ({ src: img.currentSrc || img.getAttribute('src') || '', href: img.closest('a')?.href || PROFILE }))
+        .filter((p) => /cdninstagram|fouita/.test(p.src) && !seen.has(p.href) && seen.add(p.href))
+    }
+
+    function reveal(img, src) {
+      img.onload = () => img.classList.add('is-in')
+      img.src = src
+      if (img.complete && img.naturalWidth) img.classList.add('is-in')
+    }
+
+    function render() {
+      const posts = readPosts().slice(0, 12)
+      const key = posts.map((p) => p.href).join('|')
+      if (!posts.length || key === shown) return posts.length
+      shown = key
+
+      grid.replaceChildren(...posts.map((p) => {
+        const li = document.createElement('li')
+        const a = document.createElement('a')
+        a.className = 'tile'; a.href = p.href; a.target = '_blank'; a.rel = 'noopener noreferrer'
+        a.style.setProperty('--i', grid.childElementCount ? 0 : posts.indexOf(p))
+        a.setAttribute('aria-label', 'Ver esta publicación en Instagram')
+        const img = document.createElement('img')
+        img.alt = 'Maquillaje de Johana Lugo publicado en Instagram'
+        img.loading = 'lazy'; img.decoding = 'async'
+        reveal(img, p.src)
+        a.append(img); li.append(a); return li
+      }))
+      feed.classList.add('is-ready')
+
+      posts.slice(0, 3).forEach((p, k) => {
+        heroImgs[k].alt = 'Maquillaje reciente de Johana Lugo'
+        reveal(heroImgs[k], p.src)
+        heroLinks[k].href = p.href
+      })
+      return posts.length
+    }
+
+    let queued = false
+    new MutationObserver(() => { if (!queued) { queued = true; requestAnimationFrame(() => { queued = false; render() }) } })
+      .observe(host, { childList: true, subtree: true, attributes: true, attributeFilter: ['src'] })
+
+    setTimeout(() => {
+      if (render() === 0) { feed.classList.add('is-offline'); vanity.classList.add('is-offline') }
+    }, 10000)
+  </script>
+
+  <script type="module">
+    /* ================================================================
+       PROBADOR DE PALETAS
+       MediaPipe Face Landmarker (Google, Apache-2.0) encuentra 478 puntos
+       de la cara EN EL NAVEGADOR. Con ellos pintamos labios, sombra y
+       rubor. La foto nunca se sube: vive en memoria y se va al cerrar.
+       El motor (~18 MB) sólo se descarga la primera vez que suben foto.
+       ================================================================ */
+    const TV = 'https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@1.2.2'
+    const MODEL = 'https://storage.googleapis.com/mediapipe-models/face_landmarker/face_landmarker/float16/1/face_landmarker.task'
+
+    const PALETTES = [
+      { name: 'Nude',          lips: '#B5726A', shadow: '#A97B62', blush: '#E0927F' },
+      { name: 'Berry',         lips: '#8C1D3E', shadow: '#6E3A4A', blush: '#D9707F' },
+      { name: 'Rosa gyaru',    lips: '#E1748F', shadow: '#E9A6BC', blush: '#F28AA6' },
+      { name: 'Coral',         lips: '#E0614F', shadow: '#D98A5E', blush: '#F2876E' },
+      { name: 'Bronce',        lips: '#9C5B3F', shadow: '#9A6532', blush: '#C9805A' },
+      { name: 'Cacao',         lips: '#6B3A2E', shadow: '#5A362C', blush: '#B9735E' },
+      { name: 'Rojo clásico',  lips: '#B3182D', shadow: '#7A4A44', blush: '#D96B6B' },
+      { name: 'Durazno',       lips: '#D9826B', shadow: '#E3A272', blush: '#F5A27F' },
+      { name: 'Ciruela',       lips: '#6A1F3A', shadow: '#5B2A40', blush: '#C9667E' },
+      { name: 'Dorado de noche', lips: '#9E4A4F', shadow: '#B08A3E', blush: '#D98778' },
+    ]
+
+    // Puntos de MediaPipe (malla de 468 + iris)
+    const LIPS_OUT = [61,185,40,39,37,0,267,269,270,409,291,375,321,405,314,17,84,181,91,146]
+    const LIPS_IN  = [78,191,80,81,82,13,312,311,310,415,308,324,318,402,317,14,87,178,88,95]
+    const EYES = [
+      { lid: [33,246,161,160,159,158,157,173,133], brow: [46,53,52,65,55] },
+      { lid: [263,466,388,387,386,385,384,398,362], brow: [276,283,282,295,285] },
+    ]
+    const CHEEKS = [ [50, 33, 61], [280, 263, 291] ] // centro, ojo y comisura del mismo lado
+
+    const $ = (id) => document.getElementById(id)
+    const stage = $('try-stage'), canvas = $('try-canvas'), ctx = canvas.getContext('2d')
+    const status = $('try-status'), nameEl = $('try-name'), sw = [...$('try-swatches').children]
+    const playBtn = $('try-play'), bookBtn = $('try-book'), group = $('try-palettes')
+    const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches
+
+    let landmarker = null, photo = null, face = null, idx = 0, timer = null
+    let userPaused = reduce // si pide menos movimiento, no pasan solas
+
+    // Botones de paleta
+    PALETTES.forEach((p, i) => {
+      const b = document.createElement('button')
+      b.type = 'button'; b.setAttribute('aria-label', p.name); b.setAttribute('aria-pressed', 'false')
+      b.style.cssText = `--l:${p.lips};--s:${p.shadow};--b:${p.blush}`
+      b.addEventListener('click', () => { pause(); show(i) })
+      group.append(b)
+    })
+
+    async function getLandmarker() {
+      if (landmarker) return landmarker
+      const { FilesetResolver, FaceLandmarker } = await import(`${TV}/vision_bundle.mjs`)
+      const files = await FilesetResolver.forVisionTasks(`${TV}/wasm`)
+      const opts = (delegate) => ({ baseOptions: { modelAssetPath: MODEL, delegate }, runningMode: 'IMAGE', numFaces: 1 })
+      try { landmarker = await FaceLandmarker.createFromOptions(files, opts('GPU')) }
+      catch { landmarker = await FaceLandmarker.createFromOptions(files, opts('CPU')) }
+      return landmarker
+    }
+
+    // Lee la foto respetando la orientación del celular y la reduce a 1080 px
+    async function loadPhoto(file) {
+      const url = URL.createObjectURL(file)
+      try {
+        const img = new Image(); img.src = url; await img.decode()
+        const k = Math.min(1, 1080 / Math.max(img.naturalWidth, img.naturalHeight))
+        const c = document.createElement('canvas')
+        c.width = Math.round(img.naturalWidth * k); c.height = Math.round(img.naturalHeight * k)
+        c.getContext('2d').drawImage(img, 0, 0, c.width, c.height)
+        return c
+      } finally { URL.revokeObjectURL(url) }
+    }
+
+    $('try-file').addEventListener('change', async (e) => {
+      const file = e.target.files?.[0]
+      e.target.value = '' // permite volver a elegir la misma foto
+      if (!file) return
+      if (!file.type.startsWith('image/')) { status.textContent = 'Ese archivo no es una imagen. Prueba con una foto.'; return }
+      halt()
+      try {
+        photo = await loadPhoto(file)
+        canvas.width = photo.width; canvas.height = photo.height
+        ctx.drawImage(photo, 0, 0); stage.dataset.state = 'busy'
+        status.textContent = landmarker ? 'Buscando tu cara…' : 'Preparando el probador (la primera vez tarda unos segundos)…'
+        const lm = await getLandmarker()
+        status.textContent = 'Buscando tu cara…'
+        const res = lm.detect(photo)
+        face = res.faceLandmarks?.[0]?.map((p) => ({ x: p.x * photo.width, y: p.y * photo.height }))
+        if (!face) { stage.dataset.state = 'ready'; ctx.drawImage(photo, 0, 0); status.textContent = 'No encontré una cara. Prueba una selfie de frente, con buena luz.'; return }
+        status.textContent = ''
+        stage.dataset.state = 'ready'
+        show(0); if (!userPaused) start()
+        canvas.scrollIntoView({ block: 'nearest', behavior: reduce ? 'auto' : 'smooth' })
+      } catch (err) {
+        console.warn(err)
+        stage.dataset.state = photo ? 'ready' : 'empty'
+        status.textContent = 'No se pudo preparar el probador. Revisa tu conexión e inténtalo otra vez.'
+      }
+    })
+
+    function path(c, pts) { c.beginPath(); pts.forEach((p, i) => (i ? c.lineTo(p.x, p.y) : c.moveTo(p.x, p.y))); c.closePath() }
+
+    // Pinta una capa a menor resolución y la estira: bordes suaves, en todos los navegadores
+    function softLayer(scale, draw) {
+      const w = Math.max(1, Math.round(canvas.width * scale)), h = Math.max(1, Math.round(canvas.height * scale))
+      const c = document.createElement('canvas'); c.width = w; c.height = h
+      const g = c.getContext('2d'); g.scale(scale, scale); draw(g)
+      return c
+    }
+    function blend(layer, mode, alpha) {
+      ctx.save(); ctx.globalCompositeOperation = mode; ctx.globalAlpha = alpha
+      ctx.imageSmoothingEnabled = true; ctx.imageSmoothingQuality = 'high'
+      ctx.drawImage(layer, 0, 0, canvas.width, canvas.height); ctx.restore()
+    }
+
+    function paint(p) {
+      ctx.globalCompositeOperation = 'source-over'; ctx.globalAlpha = 1
+      ctx.drawImage(photo, 0, 0)
+      const F = face
+      const faceW = Math.hypot(F[454].x - F[234].x, F[454].y - F[234].y)
+
+      // Rubor: un círculo suave en cada mejilla
+      blend(softLayer(0.12, (g) => {
+        for (const [c, eye, mouth] of CHEEKS) {
+          const x = F[c].x * 0.7 + (F[eye].x + F[mouth].x) / 2 * 0.3, y = F[c].y
+          const r = faceW * 0.17
+          const grad = g.createRadialGradient(x, y, 0, x, y, r)
+          grad.addColorStop(0, p.blush); grad.addColorStop(1, 'rgba(0,0,0,0)')
+          g.fillStyle = grad; g.beginPath(); g.arc(x, y, r, 0, Math.PI * 2); g.fill()
+        }
+      }), 'multiply', 0.3)
+
+      // Sombra: del párpado a medio camino de la ceja
+      blend(softLayer(0.2, (g) => {
+        g.fillStyle = p.shadow
+        for (const { lid, brow } of EYES) {
+          const lower = lid.map((i) => F[i])
+          const upper = lid.map((i, k) => {
+            const b = F[brow[Math.round((k / (lid.length - 1)) * (brow.length - 1))]]
+            return { x: F[i].x + (b.x - F[i].x) * 0.55, y: F[i].y + (b.y - F[i].y) * 0.55 }
+          })
+          path(g, [...lower, ...upper.reverse()]); g.fill()
+        }
+      }), 'multiply', 0.5)
+
+      // Labios: el contorno exterior menos la boca abierta
+      blend(softLayer(0.5, (g) => {
+        g.fillStyle = p.lips
+        g.beginPath()
+        LIPS_OUT.forEach((i, k) => (k ? g.lineTo(F[i].x, F[i].y) : g.moveTo(F[i].x, F[i].y))); g.closePath()
+        LIPS_IN.forEach((i, k) => (k ? g.lineTo(F[i].x, F[i].y) : g.moveTo(F[i].x, F[i].y))); g.closePath()
+        g.fill('evenodd')
+      }), 'multiply', 0.62)
+    }
+
+    function show(i) {
+      idx = (i + PALETTES.length) % PALETTES.length
+      const p = PALETTES[idx]
+      if (face) {
+        paint(p)
+        // Un desenfoque breve disimula el cambio de paleta (truco de Emil Kowalski)
+        if (!reduce) canvas.animate([{ filter: 'blur(3px)', opacity: 0.85 }, { filter: 'blur(0)', opacity: 1 }], { duration: 260, easing: 'cubic-bezier(0.23, 1, 0.32, 1)' })
+      }
+      nameEl.textContent = p.name
+      ;[p.lips, p.shadow, p.blush].forEach((c, k) => sw[k].style.setProperty('--c', c))
+      ;[...group.children].forEach((b, k) => b.setAttribute('aria-pressed', String(k === idx)))
+      canvas.setAttribute('aria-label', `Tu foto con la paleta ${p.name}`)
+      bookBtn.href = 'https://wa.me/522227693916?text=' + encodeURIComponent(`Hola Johana, me probé la paleta ${p.name} en tu página y me encantó. Me gustaría agendar una cita.`)
+    }
+
+    function start() { clearInterval(timer); timer = setInterval(() => show(idx + 1), 1800); userPaused = false; playBtn.textContent = '❚❚'; playBtn.setAttribute('aria-label', 'Pausar') }
+    function halt() { clearInterval(timer); timer = null; playBtn.textContent = '▶'; playBtn.setAttribute('aria-label', 'Reproducir') }  // pausa interna
+    function pause() { halt(); userPaused = true }                                                                                    // la persona pausó
+
+    playBtn.addEventListener('click', () => (timer ? pause() : start()))
+    $('try-prev').addEventListener('click', () => { pause(); show(idx - 1) })
+    $('try-next').addEventListener('click', () => { pause(); show(idx + 1) })
+    // Si sale de la pestaña, no gastamos batería
+    document.addEventListener('visibilitychange', () => { if (document.hidden && timer) { clearInterval(timer); timer = 'paused' } else if (!document.hidden && timer === 'paused') start() })
+    halt()
+
+    // Abrir / cerrar el probador. Cerrado no roba página ni foco (inert).
+    const section = $('probador'), toggle = $('try-toggle'), panel = $('try-panel'), toggleLabel = $('try-toggle-label')
+    function setOpen(open) {
+      section.classList.toggle('is-open', open)
+      toggle.setAttribute('aria-expanded', String(open))
+      toggleLabel.textContent = open ? 'Cerrar el probador' : 'Abrir el probador'
+      panel.inert = !open
+      if (!open && timer) halt()                       // cerrado, las paletas dejan de girar
+      if (open && face && !userPaused && !timer) start()
+    }
+    toggle.addEventListener('click', () => setOpen(toggle.getAttribute('aria-expanded') !== 'true'))
+    // El enlace "Pruébate" del menú lo abre directamente
+    document.querySelectorAll('a[href="#probador"]').forEach((a) => a.addEventListener('click', () => setOpen(true)))
+    if (location.hash === '#probador') setOpen(true)
+  </script>
+</body>
+</html>
