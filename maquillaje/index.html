@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Johana Lugo Makeup · Maquillaje profesional en Guadalajara</title>
-  <meta name="description" content="Maquillaje profesional en Guadalajara para tus eventos especiales. En mi domicilio desde $600 o a domicilio en zona GDL. Agenda por WhatsApp.">
+  <meta name="description" content="Maquillaje profesional en Guadalajara para tus eventos especiales. $600 en mi domicilio o $1,000 a domicilio en zona GDL. Agenda por WhatsApp.">
   <meta name="theme-color" content="#FCFBFA">
   <meta name="color-scheme" content="light">
 
@@ -12,7 +12,7 @@
   <meta property="og:type" content="website">
   <meta property="og:locale" content="es_MX">
   <meta property="og:title" content="Johana Lugo Makeup · Maquillaje profesional en Guadalajara">
-  <meta property="og:description" content="Un look pensado para ti. En mi domicilio desde $600 o a domicilio en zona GDL.">
+  <meta property="og:description" content="Un look pensado para ti. $600 en mi domicilio o $1,000 a domicilio en zona GDL.">
   <meta property="og:image" content="share.jpg">
   <meta name="twitter:card" content="summary_large_image">
 
@@ -204,7 +204,18 @@
     .vanity.is-offline .vanity-fallback { display: grid; justify-items: center; }
 
     .palette { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-top: clamp(14px, 2vw, 20px); }
-    .palette-label { font-weight: 600; font-size: 0.95rem; }
+    .palette-label {
+      font-weight: 600; font-size: 0.95rem; color: var(--ink); text-decoration: underline; text-decoration-thickness: 1.5px;
+      text-underline-offset: 4px; text-decoration-color: color-mix(in srgb, var(--ink) 30%, transparent);
+      display: inline-flex; align-items: center; gap: 6px; min-height: 44px; -webkit-tap-highlight-color: transparent;
+      transition: text-decoration-color 180ms ease, color 180ms ease;
+    }
+    .palette-label span { display: inline-block; transition: transform 220ms var(--ease-out); }
+    @media (hover: hover) and (pointer: fine) {
+      .palette-label:hover { color: var(--berry); text-decoration-color: currentColor; }
+      .palette-label:hover span { transform: translateX(3px); }
+    }
+    .palette-label:focus-visible { outline: 2px solid var(--berry); outline-offset: 4px; border-radius: 4px; }
     .pans { display: flex; gap: 6px; }
     .pan {
       width: 44px; height: 44px; border-radius: 50%; border: 0; padding: 0; cursor: pointer;
@@ -547,7 +558,7 @@
         <div style="--i:0">
           <h1 id="h-hero" class="rise"><span class="w"><span style="--i:0">Maquillaje</span></span> <span class="w"><span style="--i:1">profesional</span></span> <em><span class="w"><span style="--i:2">en</span></span> <span class="w"><span style="--i:3">Guadalajara</span></span><svg class="swipe" viewBox="0 0 200 20" preserveAspectRatio="none" aria-hidden="true"><path d="M3 13 C 55 5, 130 3, 197 9"/></svg></em></h1>
           <p class="lead">Un look pensado para tus facciones, tus gustos y tu personalidad. Para ese evento que merece recordarse, en mi domicilio o donde tú estés.</p>
-          <p class="fact"><strong>Desde $600</strong> A domicilio en toda la zona GDL</p>
+          <p class="fact"><strong>Desde $600</strong> <span>en mi domicilio · $1,000 a domicilio en zona GDL</span></p>
           <div class="actions">
             <a class="btn btn-primary" href="https://wa.me/522227693916?text=Hola%20Johana%2C%20me%20gustar%C3%ADa%20informaci%C3%B3n%20para%20agendar%20una%20cita." target="_blank" rel="noopener noreferrer">
               <svg class="icon" aria-hidden="true"><use href="#i-wa"/></svg>Agendar por WhatsApp
@@ -568,7 +579,7 @@
             <a class="btn btn-primary" href="https://www.instagram.com/johanalugo.makeup/" target="_blank" rel="noopener noreferrer">Ver mi Instagram</a>
           </div>
           <div class="palette">
-            <span class="palette-label" id="palette-label">Prueba un tono</span>
+            <a class="palette-label" id="palette-label" href="#probador" aria-label="Prueba un tono con tu selfie en el probador">Prueba un tono <span aria-hidden="true">→</span></a>
             <div class="pans" role="group" aria-labelledby="palette-label">
               <button class="pan" type="button" style="--pan:#D9A88C" data-tone="#EBCDBB" aria-pressed="true" aria-label="Nude"></button>
               <button class="pan" type="button" style="--pan:#D77E7E" data-tone="#F0C3BF" aria-pressed="false" aria-label="Rubor"></button>
